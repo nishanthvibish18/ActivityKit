@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		211849132C82C0EA00D5D877 /* FlightStatusTrackingSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849122C82C0EA00D5D877 /* FlightStatusTrackingSwiftUIApp.swift */; };
+		211849152C82C0EA00D5D877 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849142C82C0EA00D5D877 /* ContentView.swift */; };
+		211849172C82C0EC00D5D877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211849162C82C0EC00D5D877 /* Assets.xcassets */; };
+		2118491A2C82C0EC00D5D877 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211849192C82C0EC00D5D877 /* Preview Assets.xcassets */; };
+		211849272C82C1C400D5D877 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849262C82C1C400D5D877 /* Webservice.swift */; };
+		2118492A2C82C24100D5D877 /* FlightApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849292C82C24100D5D877 /* FlightApiResponseModel.swift */; };
+		2118492C2C82C36900D5D877 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118492B2C82C36900D5D877 /* CustomError.swift */; };
+		2118492E2C82C38000D5D877 /* APIBuilderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118492D2C82C38000D5D877 /* APIBuilderService.swift */; };
+		211849322C82C86D00D5D877 /* APIRequestMethodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849312C82C86D00D5D877 /* APIRequestMethodService.swift */; };
+		211849362C82C99800D5D877 /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849352C82C99800D5D877 /* FlightViewModel.swift */; };
+		2118493F2C82EF3300D5D877 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2118493E2C82EF3300D5D877 /* WidgetKit.framework */; };
+		211849412C82EF3300D5D877 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211849402C82EF3300D5D877 /* SwiftUI.framework */; };
+		211849442C82EF3300D5D877 /* FlightStatusActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849432C82EF3300D5D877 /* FlightStatusActivityBundle.swift */; };
+		211849462C82EF3300D5D877 /* FlightStatusActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849452C82EF3300D5D877 /* FlightStatusActivity.swift */; };
+		211849482C82EF3500D5D877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211849472C82EF3500D5D877 /* Assets.xcassets */; };
+		2118494C2C82EF3500D5D877 /* FlightStatusActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2118493C2C82EF3300D5D877 /* FlightStatusActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		211849552C82EFBD00D5D877 /* LiveActivityAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849542C82EFBD00D5D877 /* LiveActivityAttribute.swift */; };
+		211849562C82F15A00D5D877 /* LiveActivityAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849542C82EFBD00D5D877 /* LiveActivityAttribute.swift */; };
+		2118495A2C82FE2100D5D877 /* CustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211849592C82FE2100D5D877 /* CustomCellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2118494A2C82EF3500D5D877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211849072C82C0EA00D5D877 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2118493B2C82EF3300D5D877;
+			remoteInfo = FlightStatusActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		211849502C82EF3500D5D877 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2118494C2C82EF3500D5D877 /* FlightStatusActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2118490F2C82C0EA00D5D877 /* FlightStatusTrackingSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightStatusTrackingSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		211849122C82C0EA00D5D877 /* FlightStatusTrackingSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusTrackingSwiftUIApp.swift; sourceTree = "<group>"; };
+		211849142C82C0EA00D5D877 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		211849162C82C0EC00D5D877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		211849192C82C0EC00D5D877 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		211849262C82C1C400D5D877 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		211849292C82C24100D5D877 /* FlightApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightApiResponseModel.swift; sourceTree = "<group>"; };
+		2118492B2C82C36900D5D877 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		2118492D2C82C38000D5D877 /* APIBuilderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilderService.swift; sourceTree = "<group>"; };
+		211849312C82C86D00D5D877 /* APIRequestMethodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestMethodService.swift; sourceTree = "<group>"; };
+		211849352C82C99800D5D877 /* FlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
+		211849372C82CA7800D5D877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2118493C2C82EF3300D5D877 /* FlightStatusActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FlightStatusActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2118493E2C82EF3300D5D877 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		211849402C82EF3300D5D877 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		211849432C82EF3300D5D877 /* FlightStatusActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusActivityBundle.swift; sourceTree = "<group>"; };
+		211849452C82EF3300D5D877 /* FlightStatusActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusActivity.swift; sourceTree = "<group>"; };
+		211849472C82EF3500D5D877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		211849492C82EF3500D5D877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211849542C82EFBD00D5D877 /* LiveActivityAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityAttribute.swift; sourceTree = "<group>"; };
+		211849592C82FE2100D5D877 /* CustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2118490C2C82C0EA00D5D877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211849392C82EF3300D5D877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211849412C82EF3300D5D877 /* SwiftUI.framework in Frameworks */,
+				2118493F2C82EF3300D5D877 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		211849062C82C0EA00D5D877 = {
+			isa = PBXGroup;
+			children = (
+				211849112C82C0EA00D5D877 /* FlightStatusTrackingSwiftUI */,
+				211849422C82EF3300D5D877 /* FlightStatusActivity */,
+				2118493D2C82EF3300D5D877 /* Frameworks */,
+				211849102C82C0EA00D5D877 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		211849102C82C0EA00D5D877 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2118490F2C82C0EA00D5D877 /* FlightStatusTrackingSwiftUI.app */,
+				2118493C2C82EF3300D5D877 /* FlightStatusActivityExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		211849112C82C0EA00D5D877 /* FlightStatusTrackingSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				211849582C82FE1300D5D877 /* View */,
+				211849372C82CA7800D5D877 /* Info.plist */,
+				211849122C82C0EA00D5D877 /* FlightStatusTrackingSwiftUIApp.swift */,
+				211849512C82EF5B00D5D877 /* Activity */,
+				211849252C82C12500D5D877 /* Resource */,
+				211849232C82C11600D5D877 /* Webservice */,
+				211849282C82C22500D5D877 /* Model */,
+				211849212C82C10900D5D877 /* ViewModel */,
+				211849202C82C10100D5D877 /* Screen */,
+				211849182C82C0EC00D5D877 /* Preview Content */,
+			);
+			path = FlightStatusTrackingSwiftUI;
+			sourceTree = "<group>";
+		};
+		211849182C82C0EC00D5D877 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				211849192C82C0EC00D5D877 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		211849202C82C10100D5D877 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				211849142C82C0EA00D5D877 /* ContentView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		211849212C82C10900D5D877 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				211849352C82C99800D5D877 /* FlightViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		211849232C82C11600D5D877 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				211849262C82C1C400D5D877 /* Webservice.swift */,
+				211849312C82C86D00D5D877 /* APIRequestMethodService.swift */,
+				2118492D2C82C38000D5D877 /* APIBuilderService.swift */,
+				2118492B2C82C36900D5D877 /* CustomError.swift */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		211849252C82C12500D5D877 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				211849162C82C0EC00D5D877 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		211849282C82C22500D5D877 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				211849292C82C24100D5D877 /* FlightApiResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2118493D2C82EF3300D5D877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2118493E2C82EF3300D5D877 /* WidgetKit.framework */,
+				211849402C82EF3300D5D877 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		211849422C82EF3300D5D877 /* FlightStatusActivity */ = {
+			isa = PBXGroup;
+			children = (
+				211849432C82EF3300D5D877 /* FlightStatusActivityBundle.swift */,
+				211849452C82EF3300D5D877 /* FlightStatusActivity.swift */,
+				211849472C82EF3500D5D877 /* Assets.xcassets */,
+				211849492C82EF3500D5D877 /* Info.plist */,
+			);
+			path = FlightStatusActivity;
+			sourceTree = "<group>";
+		};
+		211849512C82EF5B00D5D877 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				211849542C82EFBD00D5D877 /* LiveActivityAttribute.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		211849582C82FE1300D5D877 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				211849592C82FE2100D5D877 /* CustomCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2118490E2C82C0EA00D5D877 /* FlightStatusTrackingSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2118491D2C82C0EC00D5D877 /* Build configuration list for PBXNativeTarget "FlightStatusTrackingSwiftUI" */;
+			buildPhases = (
+				2118490B2C82C0EA00D5D877 /* Sources */,
+				2118490C2C82C0EA00D5D877 /* Frameworks */,
+				2118490D2C82C0EA00D5D877 /* Resources */,
+				211849502C82EF3500D5D877 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2118494B2C82EF3500D5D877 /* PBXTargetDependency */,
+			);
+			name = FlightStatusTrackingSwiftUI;
+			productName = FlightStatusTrackingSwiftUI;
+			productReference = 2118490F2C82C0EA00D5D877 /* FlightStatusTrackingSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2118493B2C82EF3300D5D877 /* FlightStatusActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2118494D2C82EF3500D5D877 /* Build configuration list for PBXNativeTarget "FlightStatusActivityExtension" */;
+			buildPhases = (
+				211849382C82EF3300D5D877 /* Sources */,
+				211849392C82EF3300D5D877 /* Frameworks */,
+				2118493A2C82EF3300D5D877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlightStatusActivityExtension;
+			productName = FlightStatusActivityExtension;
+			productReference = 2118493C2C82EF3300D5D877 /* FlightStatusActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		211849072C82C0EA00D5D877 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2118490E2C82C0EA00D5D877 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					2118493B2C82EF3300D5D877 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2118490A2C82C0EA00D5D877 /* Build configuration list for PBXProject "FlightStatusTrackingSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 211849062C82C0EA00D5D877;
+			productRefGroup = 211849102C82C0EA00D5D877 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2118490E2C82C0EA00D5D877 /* FlightStatusTrackingSwiftUI */,
+				2118493B2C82EF3300D5D877 /* FlightStatusActivityExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2118490D2C82C0EA00D5D877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2118491A2C82C0EC00D5D877 /* Preview Assets.xcassets in Resources */,
+				211849172C82C0EC00D5D877 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2118493A2C82EF3300D5D877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211849482C82EF3500D5D877 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2118490B2C82C0EA00D5D877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2118492C2C82C36900D5D877 /* CustomError.swift in Sources */,
+				211849552C82EFBD00D5D877 /* LiveActivityAttribute.swift in Sources */,
+				211849152C82C0EA00D5D877 /* ContentView.swift in Sources */,
+				2118495A2C82FE2100D5D877 /* CustomCellView.swift in Sources */,
+				211849132C82C0EA00D5D877 /* FlightStatusTrackingSwiftUIApp.swift in Sources */,
+				211849272C82C1C400D5D877 /* Webservice.swift in Sources */,
+				211849322C82C86D00D5D877 /* APIRequestMethodService.swift in Sources */,
+				211849362C82C99800D5D877 /* FlightViewModel.swift in Sources */,
+				2118492E2C82C38000D5D877 /* APIBuilderService.swift in Sources */,
+				2118492A2C82C24100D5D877 /* FlightApiResponseModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211849382C82EF3300D5D877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211849462C82EF3300D5D877 /* FlightStatusActivity.swift in Sources */,
+				211849562C82F15A00D5D877 /* LiveActivityAttribute.swift in Sources */,
+				211849442C82EF3300D5D877 /* FlightStatusActivityBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2118494B2C82EF3500D5D877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2118493B2C82EF3300D5D877 /* FlightStatusActivityExtension */;
+			targetProxy = 2118494A2C82EF3500D5D877 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2118491B2C82C0EC00D5D877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2118491C2C82C0EC00D5D877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2118491E2C82C0EC00D5D877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightStatusTrackingSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightStatusTrackingSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nishanvibikavi.FlightStatusTrackingSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2118491F2C82C0EC00D5D877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlightStatusTrackingSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightStatusTrackingSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nishanvibikavi.FlightStatusTrackingSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2118494E2C82EF3500D5D877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightStatusActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightStatusActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nishanvibikavi.FlightStatusTrackingSwiftUI.FlightStatusActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2118494F2C82EF3500D5D877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlightStatusActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FlightStatusActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nishanvibikavi.FlightStatusTrackingSwiftUI.FlightStatusActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2118490A2C82C0EA00D5D877 /* Build configuration list for PBXProject "FlightStatusTrackingSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2118491B2C82C0EC00D5D877 /* Debug */,
+				2118491C2C82C0EC00D5D877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2118491D2C82C0EC00D5D877 /* Build configuration list for PBXNativeTarget "FlightStatusTrackingSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2118491E2C82C0EC00D5D877 /* Debug */,
+				2118491F2C82C0EC00D5D877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2118494D2C82EF3500D5D877 /* Build configuration list for PBXNativeTarget "FlightStatusActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2118494E2C82EF3500D5D877 /* Debug */,
+				2118494F2C82EF3500D5D877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 211849072C82C0EA00D5D877 /* Project object */;
+}
